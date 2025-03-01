@@ -1,10 +1,38 @@
-<!DOCTYPE html> //HTML5の宣言
-<html lang="ja"> //このHTMLは日本語で書いていることを明示
-<head>
-<meta charset="utf-8"> //文字エンコーディング指定
-<title>UED</title> //ブラウザのタブなどに表示するタイトル
-</head>
-<body>
-  <h1>Unified Exception Dictionary</h1>
-</body>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta charset="utf-8">
+    <title>UED</title>
+  </head>
+  <body>
+    <header><h1>Unified Exception Dictionary</h1></header>
+    <main>
+      ArgumentException,メソッドの引数がない。ArgumentNullExceptionやArgumentOutOfRangeException以外
+ArgumentNullException,引数がNull
+ArgumentOutOfRangeException,メソッドの許容範囲外の値が引数として渡された
+ArithmeticException,算術演算によるエラーの基本クラス
+OverflowException,DivideByZeroExceptionまたはNotFiniteNumberException以外の算術エラーを示したいとき
+OverflowException,算術演算やキャストでオーバーフローが起きたとき
+DivideByZeroException,0で割ったとき
+NotFiniteNumberException,浮動小数点数値が無限大のとき
+FormatException,引数の書式が仕様に一致していない場合
+IndexOutOfRangeException,配列のインデックスが異常なとき
+InvalidCastException,無効なキャストのとき
+InvalidOperationException,引数以外が原因のとき
+ObjectDisposedException,Dispose済みのオブジェクトで操作が実行されたとき
+NotImplementedException,メソッドが未実装の場合
+NotSupportedException,呼び出されたメソッドがサポートされてないときもしくは呼び出された機能を備えておらず、ストリームに対して読み取り、シーク、書き込みが試行されたとき
+NullReferenceException,Nullオブジェクト参照を逆参照しようとしたとき
+PlatformNotSupportException,特定のプラットフォームで機能が実行されないとき
+TimeoutException,指定したタイムアウト時間が経過したとき
+KeyNotFoundException,コレクションに該当するキーがないとき
+DirectoryNotFoundException,ディレクトリが存在しないとき
+FileNotFoundException,ファイルが存在しないとき
+EndOfStreamException,ストリームの末尾を超えて読み込もうとしたとき
+    </main>
+    
+    <script src="script.js" async></script>
+  </body>
 </html>
