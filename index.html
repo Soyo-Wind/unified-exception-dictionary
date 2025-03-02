@@ -5,34 +5,36 @@
     <link rel="apple-touch-icon" href="icon.png">
     <meta charset="utf-8">
     <title>UED</title>
+    <link rel="stylesheet" href="umi/css/bootstrap.css">
+    <link rel="js" href="umi/js/bootstrap.js">
+    <link rel="js" href="umi/js/bootstrap.bundle.js">
   </head>
   <body>
-    <header><h1>Unified Exception Dictionary</h1></header>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-default bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><a class="navbar-brand" href="#">Unified Exception Dictionary</a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doc.html">Documents</a>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+          <form class="d-flex" role="search">
+            <input type="search" class="form-control me-2" placeholder="UED-0000" aria-label="UED-0000">
+            <button type="submit" class="btn btn-outline-info flex-shrink-0">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
     <main>
-      ArgumentException,メソッドの引数がない。ArgumentNullExceptionやArgumentOutOfRangeException以外
-ArgumentNullException,引数がNull
-ArgumentOutOfRangeException,メソッドの許容範囲外の値が引数として渡された
-ArithmeticException,算術演算によるエラーの基本クラス
-OverflowException,DivideByZeroExceptionまたはNotFiniteNumberException以外の算術エラーを示したいとき
-OverflowException,算術演算やキャストでオーバーフローが起きたとき
-DivideByZeroException,0で割ったとき
-NotFiniteNumberException,浮動小数点数値が無限大のとき
-FormatException,引数の書式が仕様に一致していない場合
-IndexOutOfRangeException,配列のインデックスが異常なとき
-InvalidCastException,無効なキャストのとき
-InvalidOperationException,引数以外が原因のとき
-ObjectDisposedException,Dispose済みのオブジェクトで操作が実行されたとき
-NotImplementedException,メソッドが未実装の場合
-NotSupportedException,呼び出されたメソッドがサポートされてないときもしくは呼び出された機能を備えておらず、ストリームに対して読み取り、シーク、書き込みが試行されたとき
-NullReferenceException,Nullオブジェクト参照を逆参照しようとしたとき
-PlatformNotSupportException,特定のプラットフォームで機能が実行されないとき
-TimeoutException,指定したタイムアウト時間が経過したとき
-KeyNotFoundException,コレクションに該当するキーがないとき
-DirectoryNotFoundException,ディレクトリが存在しないとき
-FileNotFoundException,ファイルが存在しないとき
-EndOfStreamException,ストリームの末尾を超えて読み込もうとしたとき
     </main>
-    
-    <script src="script.js" async></script>
   </body>
 </html>
